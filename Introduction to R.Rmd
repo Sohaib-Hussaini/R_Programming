@@ -26,27 +26,43 @@ output: html_document
 #### Start solution ####
 ```
 
-
-```{r }
-
-```
+v1 
+v1 <- "SYED1"
 
 
 ```{r }
 
 ```
 
-
-```{r }
-
-```
+v2 <- v1
 
 
 ```{r }
 
 ```
+v3 <- 100:120
 
 
+```{r }
+
+```
+sequence <- seq(2,24,2)
+m1 <- matrix(sequence, nrow=3, ncol=3)
+m1
+```{r }
+
+```
+variable1 = (12:34)
+
+variable2 = c("qw","gf","ab","cd")
+
+name1 <- variable1
+name1
+variable1
+
+name2 <- variable2
+name1
+variable2
 ```{r }
 #### End solution ####
 ```
