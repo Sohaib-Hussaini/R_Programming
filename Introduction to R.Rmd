@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R Programming"
-author: "Sana Rasheed"
-date: "May 14, 2020"
+author: "Sohaib Hussaini"
+date: "March 11, 2022"
 output: html_document
 ---
 
@@ -44,13 +44,12 @@ v3 <- 100:120
 
 
 ```{r }
-
-```
 sequence <- seq(2,24,2)
 m1 <- matrix(sequence, nrow=3, ncol=3)
 m1
-```{r }
+```
 
+```{r }
 ```
 variable1 = (12:34)
 
@@ -63,6 +62,7 @@ variable1
 name2 <- variable2
 name1
 variable2
+
 ```{r }
 #### End solution ####
 ```
@@ -299,6 +299,21 @@ for(i in seq_len(nrow(mat_1))) {
 
 ```{r }
 
+GCD <- function(a,b) {
+  if(a > b) {
+    range1 = b
+  } else {
+    range1 = a
+  }
+  for(i in 1:range1) {
+    if((a %% i == 0) && (b %% i == 0)) {
+      GCD = i
+    }
+  }
+  return(GCD)
+}
+
+GCD(8,16)
 ```
 
 
@@ -336,6 +351,20 @@ for(i in seq_len(nrow(mat_1))) {
 
 ```{r }
 #### Start solution ####
+
+
+
+f01 <- function(a,b) {
+  if(a == b){
+    return(TRUE)
+  }else{
+    return(FALSE)
+  }
+}
+
+f01(3,3)
+args(f01)
+
 ```
 
 
