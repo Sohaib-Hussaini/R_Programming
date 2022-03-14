@@ -412,11 +412,18 @@ args(f01)
 
 ```{r }
 #### Start solution ####
+mat1 <- matrix(1:6 , 2,3)
+mat2 <- matrix(7:12, 3,2)
+dim(mat2) <-c(2,3)
+element_wise <- mat1 * mat2
+print(element_wise)
 ```
 
 
 ```{r }
-
+my_mat <-matrix(1:4, nrow=2, ncol=2)
+my_mat
+print(det(my_mat))
 ```
 
 
