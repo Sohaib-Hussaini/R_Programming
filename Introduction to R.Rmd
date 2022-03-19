@@ -463,6 +463,15 @@ print(det(my_mat))
 
 ```{r }
 #### Start solution ####
+curr_date<-as.Date("2022-03-17")
+curr_time<-strptime("09:37:00", "%H:%M:%S")
+curr_date
+curr_time
+names(unclass(curr_time))
+curr_time$wday
+curr_time$year
+curr_time$sec
+curr_time$hour
 ```
 
 
@@ -503,6 +512,17 @@ print(det(my_mat))
 
 ```{r }
 #### Start solution ####
+
+a1 <- Sys.time()
+a1
+
+a01 <-as.POSIXct("2022-03-17")
+a02 <-as.POSIXct("2022-03-17", tz='GMT')
+a02
+
+
+a03 = a01-a02
+a03
 ```
 
 
@@ -547,6 +567,20 @@ print(det(my_mat))
 
 ```{r }
 #### Start solution ####
+a1 <- list(rnorm(20))
+sapply(a1, mean)
+sapply(a1, sd)
+
+numbers <- (a= 101:150)
+lapply(numbers, mean)
+sapply(numbers, mean)
+n<-matrix(101:150, 5,5)
+apply(n, 1, mean)
+apply(n, 2, mean)
+
+f1<- gl(5,10)
+tapply(numbers, f1, mean)
+
 ```
 
 
@@ -587,6 +621,9 @@ print(det(my_mat))
 
 ```{r }
 #### Start solution ####
+q2 <- matrix(rnorm(16), 4,4)
+apply(q2, 1, mean)
+apply(q2, 2, mean)
 ```
 
 
