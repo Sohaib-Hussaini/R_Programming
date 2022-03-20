@@ -677,11 +677,28 @@ library(datasets)
 
 ```{r }
 head(Orange)
+
 ```
 
 
 ```{r }
 #### Start solution ####
+#Please upload its solution as I tried but failed to do so.
+split_data <- split(Orange, Orange$circumference)
+
+split_data
+x1 <- function(){
+  
+  for (i in split_data) {
+    if (i == 30) {
+      print(i)
+    } else if(i == 70) {
+      print(i)
+    }
+    
+  }
+}
+
 ```
 
 
